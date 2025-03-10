@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baraja de Atracción Sutil</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="start-screen">
+      <h1 class="logo">Baraja de Atracción Sutil</h1>
+      <button id="start-config">Comenzar Juego</button>
+    </div>
+    <div id="config-screen" class="hidden">
+      <h2 class="subtitle">Configuración</h2>
+      <label>Nivel: <select id="level-select">
+        <option value="1">Sutil</option>
+        <option value="2">Intriga</option>
+        <option value="3">Provocación</option>
+        <option value="random">Aleatorio</option>
+      </select></label>
+      <button id="confirm-config">Confirmar</button>
+    </div>
+    <div id="game-screen" class="hidden">
+      <h2 class="subtitle">Turno Actual</h2>
+      <div id="card-display" class="card"></div>
+      <div class="stats">Carta <span id="card-count">0</span>/300 - Nivel <span id="card-level">1</span></div>
+      <div class="button-group">
+        <button id="draw-card">Dibujar Carta <span class="icon">🎡</span></button>
+        <button id="pass">Pasar</button>
+      </div>
+      <div id="timer" class="timer hidden">
+        <div class="timer-bar"></div>
+        <span id="timer-count">5</span>s
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
